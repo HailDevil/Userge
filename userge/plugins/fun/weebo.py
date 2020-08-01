@@ -103,7 +103,7 @@ def replace_text(text):
         return text.replace("\"", "").replace("\\r", "").replace("\\n", "").replace(
             "\\", "")
 
-@userge.on_cmd("anime", about={
+@userge.on_cmd("ani", about={
     'header': "Say it with cute anime girl sticker",
     'usage': "{tr}anime [text | reply to message]",
     'example': "{tr}anime Dragon Ball"})
