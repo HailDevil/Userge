@@ -20,9 +20,9 @@ async def alive(message: Message):
     await message.delete()
     await sendit(message)
     output = f"""
-**I'm Rias Gremory.**
+**Userge is UP and Running**
 
-       __ I'm a Devil. And I'm your Servant.__
+       __ Most Stable & OP UserBot.__
 
 • 🕔**uptime** : `{userge.uptime}`
 • 🐍**python version** : `{versions.__python_version__}`
