@@ -38,7 +38,7 @@ async def alive(message: Message):
 
 async def refresh_id():
     global LOGO_STICKER_ID, LOGO_STICKER_REF  # pylint: disable=global-statement
-    sticker = (await userge.get_messages('MyChannelOp', 35)).sticker
+    sticker = (await userge.get_messages('MyChannelOp', 37)).sticker
     LOGO_STICKER_ID = sticker.file_id
     LOGO_STICKER_REF = sticker.file_ref
 
