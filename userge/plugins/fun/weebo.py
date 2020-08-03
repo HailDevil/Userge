@@ -103,7 +103,7 @@ def replace_text(text):
         return text.replace("\"", "").replace("\\r", "").replace("\\n", "").replace(
             "\\", "")
 
-@userge.on_cmd("ani", about={
+@userge.on_cmd("aninfo", about={
     'header': "Say it with cute anime girl sticker",
     'usage': "{tr}anime [text | reply to message]",
     'example': "{tr}anime Dragon Ball"})
@@ -121,7 +121,7 @@ async def anime_(message: Message):
     await message.edit(msg, disable_web_page_preview=False)
 
 
-@userge.on_cmd("upcoming$", about={'header': "Upcoming anime"})
+@userge.on_cmd("upcomings$", about={'header': "Upcoming anime"})
 async def bigf_func(message):
 
     rep = "<b>Upcoming Anime</b>\n"
@@ -175,7 +175,7 @@ async def achar_(message: Message):
         await message.edit(replace_text(rep))
 
 
-@userge.on_cmd("manga", about={
+@userge.on_cmd("mangas", about={
     'header': "Get details about given manga",
     'usage': "{tr}manga [text | reply to message]",
     'example': "{tr}manga dragon ball"})
